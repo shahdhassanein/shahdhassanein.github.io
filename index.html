@@ -4,21 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shahd Mahmoud | Backend Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:'Work Sans',sans-serif;background:#0a0a0f;color:#fff}
-nav{position:fixed;top:0;width:100%;padding:15px 5%;background:#0a0a0fcc;display:flex;justify-content:space-between;z-index:10}
-.logo{font-weight:800;font-size:22px;color:#7c7cff}
-.nav-links{list-style:none;display:flex;gap:20px}
-.nav-links a{color:#aaa;text-decoration:none}
-section{padding:100px 8%}
+:root{--bg:#0b0b12;--card:#151521;--accent:#6366f1;--text:#f1f1f7;--muted:#a1a1b5}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+nav{position:fixed;top:0;width:100%;background:#0b0b12cc;backdrop-filter:blur(12px);display:flex;justify-content:space-between;padding:20px 8%;z-index:9}
+.logo{font-family:'Syne';font-weight:800;font-size:22px;color:var(--accent)}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14px}
+section{padding:110px 8%}
 .hero{min-height:100vh;display:flex;align-items:center}
-.btn{padding:12px 28px;border-radius:30px;text-decoration:none}
-.btn-primary{background:#7c7cff;color:#fff}
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:#14141d;padding:25px;border-radius:18px}
-footer{text-align:center;padding:30px;color:#777}
+.hero h1{font-family:'Syne';font-size:3.5rem}
+.btn{display:inline-block;margin-top:20px;padding:14px 32px;border-radius:40px;background:var(--accent);color:white;text-decoration:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}
+.card{background:var(--card);padding:28px;border-radius:18px}
+footer{text-align:center;padding:40px;color:#777}
 </style>
 </head>
 
@@ -36,40 +38,42 @@ footer{text-align:center;padding:30px;color:#777}
 
 <section class="hero">
 <div>
-<h1>Hi, I'm <span style="color:#7c7cff">Shahd Mahmoud</span></h1>
-<p>Backend-focused Computer Science student building real systems using Node.js, Express and MongoDB.</p>
-<a href="#projects" class="btn btn-primary">View Projects</a>
+<h1>Shahd Mahmoud</h1>
+<p>Backend-focused Computer Science student building scalable web systems using Node.js, Express & MongoDB.</p>
+<a href="#projects" class="btn">View My Work</a>
 </div>
 </section>
 
 <section id="about">
 <h2>About Me</h2>
-<p>I am a Computer Science student passionate about backend development and real-world web systems. I focus on building dashboards, booking systems, APIs and authentication modules.</p>
+<p>
+Computer Science student specializing in backend development. I build REST APIs, admin dashboards, booking systems and authentication modules using modern web technologies.
+</p>
 </section>
 
 <section id="projects">
 <h2>Projects</h2>
-<div class="projects-grid">
+<div class="grid">
 
 <div class="card">
 <h3>Car Showroom Admin Dashboard</h3>
-<p>Admin system to manage car inventory, upload images and control pricing.</p>
+<p>Inventory management system with full CRUD, image uploads and admin authentication.</p>
 <p><b>Tech:</b> Node.js, Express, MongoDB, EJS</p>
-<a href="https://github.com/shahdhassanein/showroom2">GitHub</a>
+<a href="https://github.com/shahdhassanein/showroom2">GitHub Repo</a>
 </div>
 
 <div class="card">
-<h3>Online Cinema Booking</h3>
-<p>Movie booking platform with seats, users and ticket reservations.</p>
+<h3>Online Cinema Booking System</h3>
+<p>Users can browse movies, choose seats and reserve tickets.</p>
 <p><b>Tech:</b> PHP, MySQL</p>
-<a href="https://github.com/shahdhassanein/cinema">GitHub</a>
+<a href="https://github.com/shahdhassanein/cinema">GitHub Repo</a>
 </div>
 
 <div class="card">
 <h3>Online Appointment Booking</h3>
-<p>System for booking appointments, managing schedules and customers.</p>
+<p>Appointment scheduling platform with customer records and admin management.</p>
 <p><b>Tech:</b> Node.js, Express, MongoDB</p>
-<a href="https://github.com/shahdhassanein/onlinebooking">GitHub</a>
+<a href="https://github.com/shahdhassanein/onlinebooking">GitHub Repo</a>
 </div>
 
 </div>
@@ -82,7 +86,7 @@ footer{text-align:center;padding:30px;color:#777}
 
 <section id="contact">
 <h2>Contact</h2>
-<p>Email: your-email@gmail.com</p>
+<p>Email: shahdmahmoudhassanein@gmail.com</p>
 <p>GitHub: github.com/shahdhassanein</p>
 </section>
 
