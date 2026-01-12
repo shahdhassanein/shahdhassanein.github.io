@@ -7,19 +7,88 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-:root{--bg:#0b0b12;--card:#151521;--accent:#6366f1;--text:#f1f1f7;--muted:#a1a1b5}
+:root{
+  --bg:#0f1220;
+  --card:#161a2f;
+  --accent:#6366f1;
+  --text:#f4f5ff;
+  --muted:#9aa0c7;
+}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-nav{position:fixed;top:0;width:100%;background:#0b0b12cc;backdrop-filter:blur(12px);display:flex;justify-content:space-between;padding:20px 8%;z-index:9}
-.logo{font-family:'Syne';font-weight:800;font-size:22px;color:var(--accent)}
+
+body{
+  font-family:'Inter',sans-serif;
+  background: radial-gradient(circle at top left, #1a1f3c 0%, #0f1220 40%, #080b18 100%);
+  color:var(--text);
+  line-height:1.7;
+}
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#0f1220cc;
+  backdrop-filter:blur(12px);
+  display:flex;
+  justify-content:space-between;
+  padding:20px 8%;
+  z-index:9;
+}
+
+.logo{
+  font-family:'Syne';
+  font-weight:800;
+  font-size:22px;
+  color:var(--accent);
+}
+
 .nav-links{display:flex;gap:30px;list-style:none}
 .nav-links a{color:var(--muted);text-decoration:none;font-size:14px}
+
 section{padding:110px 8%}
+
 .hero{min-height:100vh;display:flex;align-items:center}
 .hero h1{font-family:'Syne';font-size:3.5rem}
-.btn{display:inline-block;margin-top:20px;padding:14px 32px;border-radius:40px;background:var(--accent);color:white;text-decoration:none}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}
-.card{background:var(--card);padding:28px;border-radius:18px}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 32px;
+  border-radius:40px;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  gap:30px;
+}
+
+.card{
+  background:var(--card);
+  padding:28px;
+  border-radius:18px;
+  min-height:280px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition:.4s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 40px rgba(99,102,241,0.25);
+}
+
+.card a{
+  margin-top:18px;
+  color:#8b5cf6;
+  text-decoration:none;
+  font-weight:500;
+}
+
 footer{text-align:center;padding:40px;color:#777}
 </style>
 </head>
@@ -40,25 +109,18 @@ footer{text-align:center;padding:40px;color:#777}
 <div>
 <h1>Shahd Mahmoud</h1>
 <p>
-computer science student passionate about building secure, scalable web systems and clean REST APIs.
-Strong foundation in Node.js, Express, MongoDB, databases, and computer science fundamentals.
+Junior Backend Developer & Computer Science student specialized in building secure, scalable web applications using Node.js, Express, MongoDB, and REST APIs.
 </p>
 <a href="#projects" class="btn">View My Work</a>
 </div>
 </section>
 
-
 <section id="about">
 <h2>About Me</h2>
 <p>
-I am a Computer Science student with hands-on experience in software development and IT environments through multiple internships in corporate and technical organizations. I have worked in professional team settings, gaining exposure to real-world systems, enterprise workflows, and modern development practices.
-</p>
-
-<p>
-I am passionate about building reliable, maintainable software solutions and continuously improving my technical and problem-solving skills. I have experience working with different programming languages, databases, and web technologies, and I am comfortable learning new tools and technologies when required.
+Computer Science student with strong backend development focus and hands-on experience in building real-world applications including admin dashboards, booking systems, and database-driven platforms.
 </p>
 </section>
-
 
 <section id="projects">
 <h2>Projects</h2>
@@ -80,77 +142,41 @@ I am passionate about building reliable, maintainable software solutions and con
 
 <div class="card">
 <h3>Pet Care Management System</h3>
-<p>Veterinary clinic desktop application that allows staff to manage pets, veterinarians, medical records, prescriptions, and appointments.
-</p>
-<p><b>Tech:</b>Java, JavaFX, File Handling, OOP </p>
+<p>Veterinary clinic desktop application to manage pets, vets, prescriptions and appointments.</p>
+<p><b>Tech:</b> Java, JavaFX, File Handling, OOP</p>
 </div>
-</div>
-</section>
+
 <div class="card">
 <h3>Random Number Generator (LFSR)</h3>
-<p>4-bit random number generator based on Linear Feedback Shift Register logic for digital systems.</p>
+<p>4-bit random number generator based on Linear Feedback Shift Register logic.</p>
 <p><b>Tech:</b> C++, Digital Logic, Computer Architecture</p>
 <a href="https://github.com/shahdhassanein/Random-Number-Generator-">GitHub Repo</a>
 </div>
 
 <div class="card">
 <h3>Cycle Detection Algorithms</h3>
-<p>Implementation of Floyd’s Tortoise and Hare algorithm with brute-force and divide & conquer methods.</p>
+<p>Floyd’s Tortoise and Hare cycle detection using brute-force and divide & conquer methods.</p>
 <p><b>Tech:</b> C++, Algorithms, Data Structures</p>
 <a href="https://github.com/shahdhassanein/Floyd-s-Tortoise-and-Hare-Cycle-Detection-">GitHub Repo</a>
 </div>
 
 <div class="card">
 <h3>Tic Tac Toe (GUI Desktop Game)</h3>
-<p>Graphical X/O game with win detection and interactive user interface.</p>
-<p><b>Tech:</b> C++, OOP, GUI</p>
+<p>Interactive X/O desktop game with graphical interface.</p>
+<p><b>Tech:</b> C++, GUI, OOP</p>
 <a href="https://github.com/shahdhassanein/TicTacToe">GitHub Repo</a>
 </div>
+
+</div>
+</section>
+
 <section id="skills">
 <h2>Skills</h2>
-
 <div class="grid">
-
-<div class="card">
-<h3>Backend Development</h3>
-<p>Node.js, Express.js, RESTful APIs, MVC Architecture, Authentication & Authorization, CRUD Systems</p>
-</div>
-
-<div class="card">
-<h3>Databases</h3>
-<p>MongoDB, Mongoose, MySQL, Database Design, Indexing, Data Modeling</p>
-</div>
-
-<div class="card">
-<h3>Programming Languages</h3>
-<p>JavaScript, C++, Java, PHP</p>
-</div>
-
-<div class="card">
-<h3>Algorithms & CS Fundamentals</h3>
-<p>Data Structures, Floyd’s Cycle Detection, Problem Solving, Algorithm Analysis</p>
-</div>
-
-<div class="card">
-<h3>Desktop & GUI</h3>
-<p>JavaFX, File Handling, OOP Design</p>
-</div>
-
-<div class="card">
-<h3>Web Technologies</h3>
-<p>HTML, CSS, EJS, Responsive Design</p>
-</div>
-
-<div class="card">
-<h3>Tools & Platforms</h3>
-<p>Git, GitHub, Postman, VS Code</p>
-</div>
-
-<div class="card">
-<h3>Core Concepts</h3>
-<p>Computer Architecture, Digital Logic, LFSR, OS Fundamentals</p>
-</div>
-
+<div class="card"><h3>Backend</h3><p>Node.js, Express, REST APIs, Authentication</p></div>
+<div class="card"><h3>Databases</h3><p>MongoDB, Mongoose, MySQL</p></div>
+<div class="card"><h3>Languages</h3><p>JavaScript, C++, Java, PHP</p></div>
+<div class="card"><h3>CS Fundamentals</h3><p>Data Structures, Algorithms, Digital Logic</p></div>
 </div>
 </section>
 
@@ -161,5 +187,6 @@ I am passionate about building reliable, maintainable software solutions and con
 </section>
 
 <footer>© 2026 Shahd Mahmoud</footer>
+
 </body>
 </html>
